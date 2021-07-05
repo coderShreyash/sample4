@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+        .presentation{
+display:flex;
+width:fit-content;
+animation: scrollIt 15s linear infinite;
+animation-play-state: paused;
+}
+
+input[type=checkbox]:checked ~ .presentation{
+    animation-play-state:running;
+}
+
+
+input[type=checkbox]:not(:checked) ~ .presentation{
+    animation-play-state: paused;
+}
+
+@keyframes scrollIt{
+    0%{
+
+    }
+    100%{
+        margin-left: -50%;
+    }
+}
+
+.presentation .card{
+    width: 50vw;
+    height: 30vh;
+    text-align: center;
+    margin-right: 1%;
+}
+.presentation .card img{
+   margin-top: 5%;
+   width: 70%;
+   height: 75%;
+}
+
+.presentation .card .man{
+   margin-top: 5%;
+   width: 50%;
+   height: 100%;
+}
+.presentation .card .woman{
+   margin-top: 5%;
+   width: 50%;
+   height: 100%;
+}
+
+.presentation .card h1{
+   margin-top: 1%;
+
+font-size: 4vw;
+}
+.presentation .card h2{
+    font-size:2.5vw;
+    }
+.check{
+width: 20px;
+height: 20px;
+}
+.auto{
+    font-size: 22.5px;
+}
+    @media screen and (max-width:700px) {
+        .presentation .card img{
+  height: 40%;
+}
+.title{
+    font-size: 125%;
+}
+.auto{
+    font-size: 100%;
+}
+.presentation .card h1{
+font-size: 6vw;
+}
+.presentation .card h2{
+    font-size:4vw;
+    }
+    .presentation .card .man{
+   margin-top: 5%;
+   width: 50%;
+   height: 50%;
+}
+.presentation .card .woman{
+   margin-top: 5%;
+   width: 50%;
+   height: 50%;
+}
+
+    }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;" class="title">World's First</h1>
+    <br>
+    
+    <label style="font-weight: 600;" class="auto">Autoscroll: </label>
+        <input type="checkbox" name="check" class="check">
+        <br>
+    <br>
+ 
+<br>
+    <div class="presentation">
+
+        <div class="card">
+            <h1 style="text-align: center;">Man</h1>
+          <img src="images/man.jpg" class="man" >
+          <h1>Adam
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+        <div class="card">
+            <h1 style="text-align: center;">Woman</h1>
+          <img src="images/woman.jpg" class="woman">
+          <h1>Eve
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+        <div class="card">
+            <h1 style="text-align: center;">Person To Reach Mount Everest</h1>
+          <img src="images/edmund.jpeg">
+          <h1>Sherpa Tenzing, Edmund Hillary
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+        <div class="card">
+            <h1 style="text-align: center;">Person To Reach North Pole</h1>
+          <img src="images/robert.jpg">
+          <h1>Robert Peary
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+        <div class="card">
+            <h1 style="text-align: center;">Person To Reach South Pole</h1>
+          <img src="images/amund.jpg" width="70%">
+          <h1>Amundsen
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+        <div class="card">
+            <h1 style="text-align: center;">Person To Fly an Aeroplane</h1>
+          <img src="images/wright.jpg">
+          <h1>Wright Brothers
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+        <div class="card">
+            <h1 style="text-align: center;">Person To Sail Around World</h1>
+          <img src="images/ferd.jpg">
+          <h1>Ferdinand Magellan
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+<div class="card">
+            <h1 style="text-align: center;">Person To Fly in Space</h1>
+          <img src="images/yuri.jpg">
+          <h1>Yuri Gagarin
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+        <div class="card">
+            <h1 style="text-align: center;">Person To Land On Moon</h1>
+          <img src="images/neil.jpg">
+          <h1>Neil Armstrong
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+        <div class="card">
+            <h1 style="text-align: center;">European To Attack India</h1>
+          <img src="images/alexander.jpg">
+          <h1>Alexander, The Great
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+        <div class="card">
+            <h1 style="text-align: center;">Religion</h1>
+          <img src="images/hinduism.jpg">
+          <h1>Hinduism
+          </h1>
+          <h2>Height:  2.51 m (8 ft 2.8 inch)</h2>
+        </div>
+
+    </div>
+</body>
+</html>

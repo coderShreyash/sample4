@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body::-webkit-scrollbar {
+    display: none;
+  }
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+.presentation{
+display:flex;
+width:fit-content;
+animation: scrollIt 15s linear infinite;
+animation-play-state: paused;
+}
+input[name=check]:checked ~ .presentation{
+    animation-play-state:running;
+}
+
+
+input[name=check]:not(:checked) ~ .presentation{
+    animation-play-state: paused;
+}
+.presentation:hover {
+    animation-play-state: paused;
+  }
+@keyframes scrollIt{
+    0%{
+
+    }
+    100%{
+        margin-left: -100%;
+    }
+}
+
+.presentation .card{
+    width: 40vw;
+    height: 35vh;
+    text-align: center;
+}
+.presentation .card img{
+   margin-top: 2.5%;
+   height: 75%;
+}
+.presentation .card h1{
+   margin-top: 1%;
+
+font-size: 4vw;
+}
+.presentation .card h2{
+    font-size: 2.5vw;
+    }
+.check{
+width: 20px;
+height: 20px;
+    }
+.auto{
+    font-size: 22.5px;
+}
+
+@media screen and (max-width:700px) {
+    .presentation .card img{
+    height: 30%;
+}
+.title{
+    font-size: 125%;
+}
+.auto{
+    font-size: 100%;
+}
+.presentation .card h1{
+font-size: 6vw;
+}
+.presentation .card h2{
+    font-size:4vw;
+    }
+
+    }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;" class="title">World's Largest</h1>
+    <br>
+    <label style="font-weight: 600;"  class="auto">Autoscroll: </label>
+    <input type="checkbox" name="check" class="check">
+    <br>
+    <br>
+<br>
+    <div class="presentation">
+<div class="card">
+    <h1 style="text-align: center;">Mountain</h1>
+
+  <img src="images/everest.jpg" width="80%">
+  <h1>Mount Everest
+  </h1>
+  <h2>Height:  8,849 m (29,029 ft)</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">Plateau</h1>
+
+  <img src="images/tibetian.jpg" width="80%">
+  <h1>Tibetan Plateau
+  </h1>
+  <h2>2.5 million square km (1.5 million square miles)</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">Hot Desert</h1>
+
+  <img src="images/sahara.jpg" width="80%">
+  <h1>Sahara Desert
+  </h1>
+  <h2>Area: 9.2 million km²</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">Cold Desert</h1>
+
+  <img src="images/antarcticdesert.jpg" width="80%">
+  <h1>Antarctic Desert
+  </h1>
+  <h2>Area: 14.2 million km²</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">Forest</h1>
+
+  <img src="images/amazonforest.jpg" width="80%">
+  <h1>Amazon Rainforest
+  </h1>
+  <h2>Area: 5.5 million km²</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">River</h1>
+
+  <img src="images/amazonriver.jpg_fit=scale" width="80%" height="60%">
+  <h1>Amazon River
+  </h1>
+  <h2>Area: 7.5 million km²</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">Ocean</h1>
+
+  <img src="images/pacificocean.jpg" width="80%" height="60%">
+  <h1>Pacific Ocean
+  </h1>
+  <h2>Area: 63 million miles² (155 million km²)</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">Sea</h1>
+
+  <img src="images/philipsea.jpg" width="80%" height="60%">
+  <h1>Philippine Sea
+  </h1>
+  <h2>Area:  5.695 million km²</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">Gulf</h1>
+
+  <img src="images/mexicogulf.jpg" width="80%" height="60%">
+  <h1>Gulf of Mexico
+  </h1>
+  <h2>Area:  1.6 million km²</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">Bird</h1>
+
+  <img src="images/ostrich.jpg" width="80%" height="60%">
+  <h1>Ostrich
+  </h1>
+  <h2>Area:  1.6 million km²</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">Sea Bird</h1>
+
+  <img src="images/albat.jpg" width="80%" height="60%">
+  <h1>Albatross
+  </h1>
+  <h2>Area:  1.6 million km²</h2>
+</div>
+
+<div class="card">
+    <h1 style="text-align: center;">Mammal</h1>
+
+  <img src="images/bluewhale.jpg" width="80%" height="60%">
+  <h1>Blue Whale
+  </h1>
+  <h2>Area:  1.6 million km²</h2>
+</div>
+
+
+    </div>
+</body>
+</html>
